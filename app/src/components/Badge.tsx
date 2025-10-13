@@ -45,7 +45,6 @@ export default function Badge({ year, character, margin }: BadgeProps) {
 
   useEffect(() => {
     const updateBadgeScale = () => {
-      // Find the board image to get its actual rendered size
       const boardImg = document.querySelector(
         'img[alt="Board"]',
       ) as HTMLImageElement;
@@ -53,15 +52,12 @@ export default function Badge({ year, character, margin }: BadgeProps) {
       if (boardImg && badgeRef.current && boardImg.complete) {
         const boardWidth = boardImg.offsetWidth;
 
-        // Scale badge based on board width (adjust multipliers as needed)
-        const badgeWidth = boardWidth * 0.08; // 8% of board width
-        const badgeHeight = boardWidth * 0.11; // 11% of board width (maintaining aspect ratio)
+        const badgeWidth = boardWidth * 0.1;
+        const badgeHeight = boardWidth * 0.1375;
 
-        // Apply scaling to the badge container
         badgeRef.current.style.width = `${badgeWidth}px`;
         badgeRef.current.style.height = `${badgeHeight}px`;
 
-        // Scale font sizes based on board size
         const yearText = badgeRef.current.querySelector(
           ".year-text",
         ) as HTMLElement;
@@ -73,23 +69,21 @@ export default function Badge({ year, character, margin }: BadgeProps) {
         ) as NodeListOf<HTMLElement>;
 
         if (yearText) {
-          yearText.style.fontSize = `${boardWidth * 0.012}px`; // Adjust multiplier
+          yearText.style.fontSize = `${boardWidth * 0.015}px`;
         }
         if (marginText) {
-          marginText.style.fontSize = `${boardWidth * 0.008}px`; // Adjust multiplier
+          marginText.style.fontSize = `${boardWidth * 0.01}px`;
         }
         characterImgs.forEach((img) => {
-          const imgSize = boardWidth * 0.025; // 2.5% of board width
+          const imgSize = boardWidth * 0.03125;
           img.style.width = `${imgSize}px`;
           img.style.height = `${imgSize}px`;
         });
       }
     };
 
-    // Initial setup
     const timeoutId = setTimeout(updateBadgeScale, 100);
 
-    // Update on window resize
     const handleResize = () => {
       updateBadgeScale();
     };
@@ -108,7 +102,6 @@ export default function Badge({ year, character, margin }: BadgeProps) {
 
   return (
     <div ref={badgeRef} className="relative inline-block" style={{ margin }}>
-      {/* Badge background image */}
       <div className="relative">
         <img
           src={selectedBadgeImg}
@@ -117,17 +110,14 @@ export default function Badge({ year, character, margin }: BadgeProps) {
         />
       </div>
 
-      {/* Content on top of badge */}
       <div
         className="absolute inset-0 flex flex-col items-center justify-center gap-1"
         style={{ paddingBottom: "45%" }}
       >
-        {/* Year at top */}
         <div className="year-text text-black font-bold drop-shadow-md leading-none">
           {year}
         </div>
 
-        {/* Bottom row: Character(s) and Margin OR two characters for draw */}
         <div
           className="flex items-center justify-center w-full px-3"
           style={{ gap: "0.17rem" }}
