@@ -316,17 +316,6 @@ export default function Board() {
           <Badge year="" character="blank" margin="" />
         </div>
 
-        {/* 2046 */}
-        <div
-          className="absolute"
-          style={{
-            left: "0%",
-            top: "69%",
-          }}
-        >
-          <Badge year="" character="blank" margin="" />
-        </div>
-
         {/* 2047 */}
         <div
           className="absolute"
