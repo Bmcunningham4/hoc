@@ -12,6 +12,7 @@ export default function Board() {
         <Badge year="2023" character="dry-bones" margin="10pts" />
         <Badge year="2024" character="coops" margin="2pts" />
         <Badge year="" character="blank" margin="" />
+        <Badge year="2022" character="draw" margin="" />
       </div>
     </div>
   );
