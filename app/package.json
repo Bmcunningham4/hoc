@@ -9,8 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --write .",
-    "deploy": "npm run build && gh-pages -d dist"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "circletype": "^2.3.0",
