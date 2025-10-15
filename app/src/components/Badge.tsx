@@ -46,10 +46,10 @@ export default function Badge({ year, character, margin }: BadgeProps) {
 
   return (
     <div
-      className="relative inline-block border-4 border-red-500"
+      className="relative inline-block"
       style={{
-        width: "8cqw", // 8% of container width
-        height: "11cqh", // 11% of container height
+        width: "9.72cqw", // 10% smaller while maintaining ratio
+        height: "13.365cqh", // 10% smaller while maintaining ratio
       }}
     >
       {/* Badge background image */}
@@ -67,10 +67,10 @@ export default function Badge({ year, character, margin }: BadgeProps) {
         <div
           className="absolute text-black font-bold drop-shadow-md leading-none"
           style={{
-            top: "20%",
+            top: "28%",
             left: "50%",
             transform: "translateX(-50%)", // Centers horizontally
-            fontSize: "20%", // 20% of badge height
+            fontSize: "1.6cqh", // Container query height units for proper scaling
           }}
         >
           {year}
@@ -85,10 +85,10 @@ export default function Badge({ year, character, margin }: BadgeProps) {
               alt="dry-bones"
               className="absolute object-contain"
               style={{
-                top: "25%",
-                left: "25%",
-                width: "25%", // 25% of badge width
-                height: "25%", // 25% of badge height
+                top: "40%",
+                left: "15%",
+                width: "32%", // 25% of badge width
+                height: "32%", // 25% of badge height
               }}
             />
             {/* Second character (right side) */}
@@ -97,10 +97,10 @@ export default function Badge({ year, character, margin }: BadgeProps) {
               alt="coops"
               className="absolute object-contain"
               style={{
-                top: "25%",
-                left: "75%",
-                width: "25%", // 25% of badge width
-                height: "25%", // 25% of badge height
+                top: "40%",
+                left: "68%",
+                width: "32%", // 25% of badge width
+                height: "32%", // 25% of badge height
                 transform: "translateX(-50%)", // Center on the 75% point
               }}
             />
@@ -114,10 +114,10 @@ export default function Badge({ year, character, margin }: BadgeProps) {
                 alt={character}
                 className="absolute object-contain"
                 style={{
-                  top: "25%",
-                  left: "10%",
-                  width: "30%", // 30% of badge width
-                  height: "30%", // 30% of badge height
+                  top: "38%",
+                  left: "17%",
+                  width: "35%", // 30% of badge width
+                  height: "35%", // 30% of badge height
                 }}
               />
             )}
@@ -125,9 +125,9 @@ export default function Badge({ year, character, margin }: BadgeProps) {
             <div
               className="absolute text-black drop-shadow-lg"
               style={{
-                top: "60%",
-                left: "75%",
-                fontSize: "12%", // 12% of badge height
+                top: "55%",
+                left: "68%",
+                fontSize: "1.1cqh", // Container query height units for proper scaling
                 transform: "translateX(-50%)", // Center on the 75% point
               }}
             >
