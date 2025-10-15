@@ -35,7 +35,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "18%",
+            left: "65%",
             top: "24%",
           }}
         >
@@ -46,7 +46,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "27%",
+            left: "74%",
             top: "24%",
           }}
         >
@@ -79,7 +79,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "29%",
+            left: "63%",
             top: "33%",
           }}
         >
@@ -90,7 +90,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "20%",
+            left: "72%",
             top: "33%",
           }}
         >
@@ -133,7 +133,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "17%",
+            left: "59%",
             top: "42%",
           }}
         >
@@ -144,7 +144,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "25%",
+            left: "67%",
             top: "42%",
           }}
         >
@@ -155,7 +155,7 @@ export default function Board() {
         <div
           className="absolute"
           style={{
-            right: "33%",
+            left: "75%",
             top: "42%",
           }}
         >
