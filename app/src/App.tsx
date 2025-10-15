@@ -9,7 +9,7 @@ export default function App() {
         backgroundImage: `url(${trackImg})`,
       }}
     >
-      <div className="w-[120%] flex justify-center">
+      <div className="w-[80%] flex justify-center">
         <Board />
       </div>
     </div>
