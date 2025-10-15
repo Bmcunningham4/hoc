@@ -17,7 +17,7 @@ export default function Board() {
             top: "24%",
           }}
         >
-          <Badge year="2017" character="dry-bones" margin="1pts" />
+          <Badge year="20170000" character="dry-bones" margin="1pts" />
         </div>
 
         {/* 2019 */}

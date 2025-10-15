@@ -1,0 +1,6 @@
+
+## Description:
+This project is meant to turn hype when I add other pages. eg. Charding, C-ham bball, ...
+
+But I eventually want to fix the automatic gh-pages deployment rather than manual the package seems absolutely shocking tho...
+- Maybe create an issue when I go down this rabbit hole again..
