@@ -1,4 +1,5 @@
 import Board from "./components/Board";
+import Countdown from "./components/Countdown";
 import trackImg from "./assets/track.jpg";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <div className="w-[120%] flex justify-center">
         <Board />
       </div>
+      <Countdown />
     </div>
   );
 }
