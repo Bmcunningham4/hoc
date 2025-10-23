@@ -94,7 +94,7 @@ export default function Board() {
             top: "31%",
           }}
         >
-          <Badge year="2025" character="dry-bones" margin="50pts" />
+          <Badge year="2025" character="dry-bones" margin="13pts" />
         </div>
         {/* 2026 */}
         <div
