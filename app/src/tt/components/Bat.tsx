@@ -37,7 +37,7 @@ export default function Bat({ year, player, score }: BatProps) {
     <div
       className="relative inline-block"
       style={{
-        width: "35cqw", // Always large size
+        width: "35cqw",
         aspectRatio: "3/4",
       }}
     >
@@ -47,8 +47,8 @@ export default function Bat({ year, player, score }: BatProps) {
           src={selectedBatImg}
           alt="Table Tennis Bat"
           className="w-full h-full object-contain"
-          style={{ 
-            transform: "rotate(-30deg)"
+          style={{
+            transform: "rotate(-30deg)",
           }}
         />
       </div>
@@ -59,10 +59,10 @@ export default function Bat({ year, player, score }: BatProps) {
         <div
           className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "25%",
-            left: "50%",
+            top: "33%",
+            left: "44%",
             transform: "translateX(-50%)",
-            fontSize: "5.5cqw",
+            fontSize: "3.5cqw",
           }}
         >
           {year}
@@ -72,10 +72,10 @@ export default function Bat({ year, player, score }: BatProps) {
         <div
           className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "50%",
-            left: "50%",
+            top: "44%",
+            left: "43%",
             transform: "translateX(-50%)",
-            fontSize: "7cqw",
+            fontSize: "3.5cqw",
           }}
         >
           {score}
@@ -83,12 +83,12 @@ export default function Bat({ year, player, score }: BatProps) {
 
         {/* Player initials */}
         <div
-          className="absolute text-white font-medium drop-shadow-md leading-none"
+          className="absolute text-black font-medium drop-shadow-md leading-none"
           style={{
-            top: "75%",
-            left: "50%",
+            top: player === "cun" ? "62%" : "66%",
+            left: player === "cun" ? "60.6%" : "63%",
             transform: "translateX(-50%)",
-            fontSize: "4cqw",
+            fontSize: "1.65cqw",
           }}
         >
           {initials}

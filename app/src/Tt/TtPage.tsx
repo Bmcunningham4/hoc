@@ -9,7 +9,7 @@ export default function TtPage() {
         backgroundImage: `url(${ttBgImg})`,
       }}
     >
-      <div className="w-full h-full flex justify-center"> 
+      <div className="w-full h-full flex justify-center">
         <Table />
       </div>
     </div>
