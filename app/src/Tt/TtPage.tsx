@@ -1,10 +1,17 @@
+import Table from "./components/Table";
+import ttBgImg from "./assets/tt-bg.png";
+
 export default function TtPage() {
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-br from-green-800 to-green-600">
-      <h1 className="text-6xl font-bold text-white mb-4 drop-shadow-lg">
-        🏓 Table Tennis
-      </h1>
-      <p className="text-xl text-green-100">TT Page letsgettitiit</p>
+    <div
+      className="h-screen w-full flex flex-col items-center justify-center m-0 p-0 bg-cover bg-center bg-no-repeat overflow-x-hidden"
+      style={{
+        backgroundImage: `url(${ttBgImg})`,
+      }}
+    >
+      <div className="w-[120%] sm:w-[80%] flex justify-center">
+        <Table />
+      </div>
     </div>
   );
 }
