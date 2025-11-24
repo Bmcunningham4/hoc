@@ -37,20 +37,18 @@ export default function Bat({ year, player, score }: BatProps) {
     <div
       className="relative inline-block"
       style={{
-        width: "200cqw",
-        height: "300cqh",
-        border: "3px solid red", // Main container border
+        width: "35cqw", // Always large size
+        aspectRatio: "3/4",
       }}
     >
       {/* Bat background image */}
-      <div className="relative w-full h-full" style={{ border: "3px solid red" }}>
+      <div className="relative w-full h-full">
         <img
           src={selectedBatImg}
           alt="Table Tennis Bat"
           className="w-full h-full object-contain"
           style={{ 
-            border: "3px solid red", // Image border
-            transform: "rotate(-30deg)" // 30 degrees to the left
+            transform: "rotate(-30deg)"
           }}
         />
       </div>
@@ -59,13 +57,12 @@ export default function Bat({ year, player, score }: BatProps) {
       <div className="absolute inset-0">
         {/* Year text */}
         <div
-          className="absolute text-white font-bold drop-shadow-md leading-none text-center"
+          className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "35%",
-            left: "43%",
+            top: "25%",
+            left: "50%",
             transform: "translateX(-50%)",
-            fontSize: "18cqh",
-            border: "3px solid red", // Year text border
+            fontSize: "5.5cqw",
           }}
         >
           {year}
@@ -73,13 +70,12 @@ export default function Bat({ year, player, score }: BatProps) {
 
         {/* Score in the middle */}
         <div
-          className="absolute text-white font-bold drop-shadow-md leading-none text-center"
+          className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "45%",
-            left: "43%",
+            top: "50%",
+            left: "50%",
             transform: "translateX(-50%)",
-            fontSize: "18cqh",
-            border: "3px solid red", // Score text border
+            fontSize: "7cqw",
           }}
         >
           {score}
@@ -87,13 +83,12 @@ export default function Bat({ year, player, score }: BatProps) {
 
         {/* Player initials */}
         <div
-          className="absolute text-black font-medium drop-shadow-md leading-none text-center"
+          className="absolute text-white font-medium drop-shadow-md leading-none"
           style={{
-            top: "61%",
-            left: "61%",
+            top: "75%",
+            left: "50%",
             transform: "translateX(-50%)",
-            fontSize: "8cqh",
-            border: "3px solid red", // Initials text border
+            fontSize: "4cqw",
           }}
         >
           {initials}

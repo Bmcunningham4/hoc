@@ -48,8 +48,8 @@ export default function Badge({ year, character, margin }: BadgeProps) {
     <div
       className="relative inline-block"
       style={{
-        width: "9.72cqw", // 10% smaller while maintaining ratio
-        height: "13.365cqh", // 10% smaller while maintaining ratio
+        width: "9.72cqw", 
+        height: "13.365cqh", 
       }}
     >
       {/* Badge background image */}
