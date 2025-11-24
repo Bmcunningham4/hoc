@@ -1,10 +1,11 @@
 import batCunImg from "../assets/bat-cun.png";
 import batChardImg from "../assets/bat-chard.png";
+import batBlueImg from "../assets/bat-blue.png";
 
 interface BatProps {
   year: string;
-  player: "cun" | "chard";
-  score: string;
+  player: "cun" | "chard" | "blank";
+  score?: string;
 }
 
 export default function Bat({ year, player, score }: BatProps) {
@@ -14,8 +15,10 @@ export default function Bat({ year, player, score }: BatProps) {
         return batCunImg;
       case "chard":
         return batChardImg;
+      case "blank":
+        return batBlueImg;
       default:
-        return batCunImg;
+        return batBlueImg;
     }
   };
 
@@ -25,13 +28,15 @@ export default function Bat({ year, player, score }: BatProps) {
         return "BC";
       case "chard":
         return "CH";
+      case "blank":
       default:
-        return "BC";
+        return "";
     }
   };
 
   const selectedBatImg = getBatImg();
   const initials = getInitials();
+  const isBlank = player === "blank";
 
   return (
     <div
@@ -68,31 +73,35 @@ export default function Bat({ year, player, score }: BatProps) {
           {year}
         </div>
 
-        {/* Score in the middle */}
-        <div
-          className="absolute text-white font-bold drop-shadow-md leading-none"
-          style={{
-            top: "44%",
-            left: "43%",
-            transform: "translateX(-50%)",
-            fontSize: "3.5cqw",
-          }}
-        >
-          {score}
-        </div>
+        {/* Score in the middle - only show if not blank */}
+        {!isBlank && score && (
+          <div
+            className="absolute text-white font-bold drop-shadow-md leading-none"
+            style={{
+              top: "44%",
+              left: "43%",
+              transform: "translateX(-50%)",
+              fontSize: "3.5cqw",
+            }}
+          >
+            {score}
+          </div>
+        )}
 
-        {/* Player initials */}
-        <div
-          className="absolute text-black font-medium drop-shadow-md leading-none"
-          style={{
-            top: player === "cun" ? "62%" : "66%",
-            left: player === "cun" ? "60.6%" : "63%",
-            transform: "translateX(-50%)",
-            fontSize: "1.65cqw",
-          }}
-        >
-          {initials}
-        </div>
+        {/* Player initials - only show if not blank */}
+        {!isBlank && initials && (
+          <div
+            className="absolute text-black font-medium drop-shadow-md leading-none"
+            style={{
+              top: player === "cun" ? "62%" : "66%",
+              left: player === "cun" ? "60.6%" : "63%",
+              transform: "translateX(-50%)",
+              fontSize: "1.65cqw",
+            }}
+          >
+            {initials}
+          </div>
+        )}
       </div>
     </div>
   );
