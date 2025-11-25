@@ -12,6 +12,10 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/mk" element={<MkPage />} />
           <Route path="/tt" element={<TtPage />} />
+          <Route
+            path="*"
+            element={<div>Route not found: {window.location.hash}</div>}
+          />
         </Routes>
       </div>
     </HashRouter>
