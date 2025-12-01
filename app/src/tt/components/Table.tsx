@@ -57,7 +57,7 @@ export default function Table() {
               left: "45%",
             }}
           >
-            <Bat year="2025" player="cun" score="9-0" />
+            <Bat year="2025" player="cun" score="3-2" />
           </div>
 
           {/* 2026 - Blank */}
