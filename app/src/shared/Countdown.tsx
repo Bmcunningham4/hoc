@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-export default function Countdown() {
+interface CountdownProps {
+  date: string; // Format: "DD-MM-YYYY" or "YYYY-MM-DD"
+  time?: string; // Format: "HH:MM" (optional, defaults to "19:00")
+}
+
+export default function Countdown({ date, time = "19:00" }: CountdownProps) {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -11,14 +16,31 @@ export default function Countdown() {
   useEffect(() => {
     const calculateTimeLeft = () => {
       const now = new Date();
-      const currentYear = now.getFullYear();
 
-      let targetDate = new Date(currentYear, 10, 30, 19, 0, 0); // Month is 0-indexed, so 10 = November
+      // Parse the date string - supports both DD-MM-YYYY and YYYY-MM-DD formats
+      let targetDate: Date;
 
-      if (now > targetDate) {
-        targetDate = new Date(currentYear + 1, 10, 30, 19, 0, 0);
+      if (date.includes("-")) {
+        const parts = date.split("-");
+        if (parts[0].length === 4) {
+          // YYYY-MM-DD format
+          const [year, month, day] = parts.map(Number);
+          targetDate = new Date(year, month - 1, day);
+        } else {
+          // DD-MM-YYYY format
+          const [day, month, year] = parts.map(Number);
+          targetDate = new Date(year, month - 1, day);
+        }
+      } else {
+        // Fallback to current behavior if format is unexpected
+        targetDate = new Date();
       }
 
+      // Parse and set the time
+      const [hours, minutes] = time.split(":").map(Number);
+      targetDate.setHours(hours, minutes, 0, 0);
+
+      // If the target date has passed, don't add a year (let it show as expired)
       const difference = targetDate.getTime() - now.getTime();
 
       if (difference > 0) {
@@ -42,7 +64,7 @@ export default function Countdown() {
     const timer = setInterval(calculateTimeLeft, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [date, time]);
 
   return (
     <div className="flex justify-center items-center mt-4 text-white">

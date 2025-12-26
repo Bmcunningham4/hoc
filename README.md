@@ -2,5 +2,11 @@
 ## Description:
 This project is meant to turn hype when I add other pages. eg. Charding, C-ham bball, ...
 
-But I eventually want to fix the automatic gh-pages deployment rather than manual the package seems absolutely shocking tho...
-- Maybe create an issue when I go down this rabbit hole again..
+
+- Add automatic pre-commit formatting hook..
+
+
+1) Move countdown to shared..
+2) Create a page layout component.. (customisable..)
+3) Create mock page (simple)
+4) Use mock as template for all future pages...

@@ -1,5 +1,5 @@
 import Board from "./components/Board";
-import Countdown from "./components/Countdown";
+import Countdown from "../shared/Countdown";
 import trackImg from "./assets/track.jpg";
 
 export default function MkPage() {
@@ -13,7 +13,7 @@ export default function MkPage() {
       <div className="w-[120%] sm:w-[80%] flex justify-center">
         <Board />
       </div>
-      <Countdown />
+      <Countdown date="30-11-2026" />
     </div>
   );
 }
