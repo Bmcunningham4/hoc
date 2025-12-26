@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 interface CountdownProps {
-  date: string; // Format: "DD-MM-YYYY" or "YYYY-MM-DD"
-  time?: string; // Format: "HH:MM" (optional, defaults to "19:00")
+  date: string;
+  time?: string;
 }
 
 export default function Countdown({ date, time = "19:00" }: CountdownProps) {
@@ -13,34 +13,36 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
     seconds: 0,
   });
 
+  const formatDisplayDate = (dateString: string) => {
+    const [day, month] = dateString.split("-").map(Number);
+    const currentYear = new Date().getFullYear();
+    const targetDate = new Date(currentYear, month - 1, day);
+
+    return targetDate.toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  };
+
   useEffect(() => {
     const calculateTimeLeft = () => {
       const now = new Date();
+      const [day, month] = date.split("-").map(Number);
+      const currentYear = now.getFullYear();
 
-      // Parse the date string - supports both DD-MM-YYYY and YYYY-MM-DD formats
-      let targetDate: Date;
-
-      if (date.includes("-")) {
-        const parts = date.split("-");
-        if (parts[0].length === 4) {
-          // YYYY-MM-DD format
-          const [year, month, day] = parts.map(Number);
-          targetDate = new Date(year, month - 1, day);
-        } else {
-          // DD-MM-YYYY format
-          const [day, month, year] = parts.map(Number);
-          targetDate = new Date(year, month - 1, day);
-        }
-      } else {
-        // Fallback to current behavior if format is unexpected
-        targetDate = new Date();
-      }
+      let targetDate = new Date(currentYear, month - 1, day);
 
       // Parse and set the time
       const [hours, minutes] = time.split(":").map(Number);
       targetDate.setHours(hours, minutes, 0, 0);
 
-      // If the target date has passed, don't add a year (let it show as expired)
+      // If the target date has already passed this year, set it for next year
+      if (targetDate.getTime() <= now.getTime()) {
+        targetDate = new Date(currentYear + 1, month - 1, day);
+        targetDate.setHours(hours, minutes, 0, 0);
+      }
+
       const difference = targetDate.getTime() - now.getTime();
 
       if (difference > 0) {
@@ -67,7 +69,12 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
   }, [date, time]);
 
   return (
-    <div className="flex justify-center items-center mt-4 text-white">
+    <div className="flex flex-col items-center mt-4 text-white">
+      <div className="text-center mb-3">
+        <span className="text-sm font-normal opacity-60">
+          {formatDisplayDate(date)}
+        </span>
+      </div>
       <div
         className="rounded-lg px-6 py-3 "
         style={{
