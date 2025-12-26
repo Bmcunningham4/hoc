@@ -33,11 +33,9 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
 
       let targetDate = new Date(currentYear, month - 1, day);
 
-      // Parse and set the time
       const [hours, minutes] = time.split(":").map(Number);
       targetDate.setHours(hours, minutes, 0, 0);
 
-      // If the target date has already passed this year, set it for next year
       if (targetDate.getTime() <= now.getTime()) {
         targetDate = new Date(currentYear + 1, month - 1, day);
         targetDate.setHours(hours, minutes, 0, 0);

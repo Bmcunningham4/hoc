@@ -68,7 +68,7 @@ export default function Table() {
               left: "60%",
             }}
           >
-            <Bat year="2026" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2027 - Blank */}
@@ -79,7 +79,7 @@ export default function Table() {
               left: "0%",
             }}
           >
-            <Bat year="2027" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2028 - Blank */}
@@ -90,7 +90,7 @@ export default function Table() {
               left: "15%",
             }}
           >
-            <Bat year="2028" player="blank" />
+            <Bat year="" player="blank" />
           </div>
           {/* 2029 - Blank */}
           <div
@@ -100,7 +100,7 @@ export default function Table() {
               left: "30%",
             }}
           >
-            <Bat year="2029" player="blank" />
+            <Bat year="" player="blank" />
           </div>
           {/* 2030 - Blank */}
           <div
@@ -110,7 +110,7 @@ export default function Table() {
               left: "45%",
             }}
           >
-            <Bat year="2030" player="blank" />
+            <Bat year="" player="blank" />
           </div>
           {/* 2031 - Blank */}
           <div
@@ -120,7 +120,7 @@ export default function Table() {
               left: "60%",
             }}
           >
-            <Bat year="2031" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2032 - Blank */}
@@ -131,7 +131,7 @@ export default function Table() {
               left: "0%",
             }}
           >
-            <Bat year="2032" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2033 - Blank */}
@@ -142,7 +142,7 @@ export default function Table() {
               left: "15%",
             }}
           >
-            <Bat year="2033" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2034 - Blank */}
@@ -153,7 +153,7 @@ export default function Table() {
               left: "30%",
             }}
           >
-            <Bat year="2034" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2035 - Blank */}
@@ -164,7 +164,7 @@ export default function Table() {
               left: "45%",
             }}
           >
-            <Bat year="2035" player="blank" />
+            <Bat year="" player="blank" />
           </div>
 
           {/* 2036 - Blank */}
@@ -175,7 +175,7 @@ export default function Table() {
               left: "60%",
             }}
           >
-            <Bat year="2036" player="blank" />
+            <Bat year="" player="blank" />
           </div>
         </div>
       </div>
