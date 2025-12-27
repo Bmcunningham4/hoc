@@ -12,11 +12,11 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
     minutes: 0,
     seconds: 0,
   });
+  const [targetYear, setTargetYear] = useState(new Date().getFullYear());
 
-  const formatDisplayDate = (dateString: string) => {
+  const formatDisplayDate = (dateString: string, year: number) => {
     const [day, month] = dateString.split("-").map(Number);
-    const currentYear = new Date().getFullYear();
-    const targetDate = new Date(currentYear, month - 1, day);
+    const targetDate = new Date(year, month - 1, day);
 
     return targetDate.toLocaleDateString("en-GB", {
       day: "numeric",
@@ -40,6 +40,9 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
         targetDate = new Date(currentYear + 1, month - 1, day);
         targetDate.setHours(hours, minutes, 0, 0);
       }
+
+      // Update the target year for display
+      setTargetYear(targetDate.getFullYear());
 
       const difference = targetDate.getTime() - now.getTime();
 
@@ -70,7 +73,7 @@ export default function Countdown({ date, time = "19:00" }: CountdownProps) {
     <div className="flex flex-col items-center mt-4 text-white">
       <div className="text-center mb-3">
         <span className="text-sm font-normal opacity-60">
-          {formatDisplayDate(date)}
+          {formatDisplayDate(date, targetYear)}
         </span>
       </div>
       <div
