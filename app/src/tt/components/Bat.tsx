@@ -22,20 +22,7 @@ export default function Bat({ year, player, score }: BatProps) {
     }
   };
 
-  const getInitials = () => {
-    switch (player) {
-      case "cun":
-        return "BC";
-      case "chard":
-        return "CH";
-      case "blank":
-      default:
-        return "";
-    }
-  };
-
   const selectedBatImg = getBatImg();
-  const initials = getInitials();
   const isBlank = player === "blank";
 
   return (
@@ -64,10 +51,10 @@ export default function Bat({ year, player, score }: BatProps) {
         <div
           className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "33%",
+            top: "34%",
             left: "44%",
             transform: "translateX(-50%)",
-            fontSize: "3.5cqw",
+            fontSize: "2.8cqw",
           }}
         >
           {year}
@@ -81,25 +68,10 @@ export default function Bat({ year, player, score }: BatProps) {
               top: "44%",
               left: "43%",
               transform: "translateX(-50%)",
-              fontSize: "3.5cqw",
+              fontSize: "3.1cqw",
             }}
           >
             {score}
-          </div>
-        )}
-
-        {/* Player initials - only show if not blank */}
-        {!isBlank && initials && (
-          <div
-            className="absolute text-black font-medium drop-shadow-md leading-none"
-            style={{
-              top: player === "cun" ? "62%" : "66%",
-              left: player === "cun" ? "60.6%" : "63%",
-              transform: "translateX(-50%)",
-              fontSize: "1.65cqw",
-            }}
-          >
-            {initials}
           </div>
         )}
       </div>
