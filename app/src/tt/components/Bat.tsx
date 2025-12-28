@@ -40,7 +40,7 @@ export default function Bat({ year, player, score }: BatProps) {
           alt="Table Tennis Bat"
           className="w-full h-full object-contain"
           style={{
-            transform: "rotate(-30deg)",
+            transform: "rotate(-35deg)",
           }}
         />
       </div>
