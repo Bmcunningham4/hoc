@@ -29,7 +29,7 @@ export default function Bat({ year, player, score }: BatProps) {
     <div
       className="relative inline-block"
       style={{
-        width: "35cqw",
+        width: "43cqw",
         aspectRatio: "3/4",
       }}
     >

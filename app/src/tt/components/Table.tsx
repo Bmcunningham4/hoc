@@ -5,15 +5,12 @@ export default function Table() {
   return (
     <div className="relative w-full flex justify-center">
       <img src={blank} alt="Board" className="w-full h-auto max-w-none" />
-      <div
-        className="absolute inset-0"
-        style={{ containerType: "size", border: "2px solid red" }}
-      >
+      <div className="absolute inset-0" style={{ containerType: "size" }}>
         {/* 2022 */}
         <div
           className="absolute"
           style={{
-            top: "0%",
+            top: "-13%",
             left: "-5%",
           }}
         >
@@ -24,8 +21,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "0%",
-            left: "10%",
+            top: "-13%",
+            left: "13%",
           }}
         >
           <Bat year="2023" player="cun" score="3-0" />
@@ -35,8 +32,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "0%",
-            left: "25%",
+            top: "-13%",
+            left: "31%",
           }}
         >
           <Bat year="2024" player="chard" score="3-0" />
@@ -46,8 +43,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "0%",
-            left: "40%",
+            top: "-13%",
+            left: "49%",
           }}
         >
           <Bat year="2025" player="cun" score="3-2" />
@@ -57,19 +54,19 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "0%",
-            left: "55%",
+            top: "-13%",
+            left: "67%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2027 - Blank */}
+        {/* 2027 */}
         <div
           className="absolute"
           style={{
-            top: "0%",
-            left: "70%",
+            top: "7%",
+            left: "-5%",
           }}
         >
           <Bat year="" player="blank" />
@@ -79,8 +76,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "-5%",
+            top: "7%",
+            left: "13%",
           }}
         >
           <Bat year="" player="blank" />
@@ -90,8 +87,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "10%",
+            top: "7%",
+            left: "31%",
           }}
         >
           <Bat year="" player="blank" />
@@ -101,51 +98,52 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "25%",
+            top: "7%",
+            left: "49%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2031 */}
+        {/* 2031 - Blank */}
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "40%",
+            top: "7%",
+            left: "67%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2032 - Blank */}
+        {/* 2032 */}
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "55%",
+            top: "27%",
+            left: "-5%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2033 - Blank */}
+        {/* 2033 */}
         <div
           className="absolute"
           style={{
-            top: "18%",
-            left: "70%",
+            top: "27%",
+            left: "13%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
+
         {/* 2034 */}
         <div
           className="absolute"
           style={{
-            top: "36%",
-            left: "-5%",
+            top: "27%",
+            left: "31%",
           }}
         >
           <Bat year="" player="blank" />
@@ -155,19 +153,19 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "36%",
-            left: "10%",
+            top: "27%",
+            left: "49%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2036 */}
+        {/* 2036 - Blank */}
         <div
           className="absolute"
           style={{
-            top: "36%",
-            left: "25%",
+            top: "27%",
+            left: "67%",
           }}
         >
           <Bat year="" player="blank" />
@@ -177,51 +175,52 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "36%",
-            left: "40%",
-          }}
-        >
-          <Bat year="" player="blank" />
-        </div>
-
-        {/* 2038 - Blank */}
-        <div
-          className="absolute"
-          style={{
-            top: "36%",
-            left: "55%",
-          }}
-        >
-          <Bat year="" player="blank" />
-        </div>
-
-        {/* 2039 - Blank */}
-        <div
-          className="absolute"
-          style={{
-            top: "36%",
-            left: "70%",
-          }}
-        >
-          <Bat year="" player="blank" />
-        </div>
-        {/* 2040 */}
-        <div
-          className="absolute"
-          style={{
-            top: "54%",
+            top: "47%",
             left: "-5%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2041 */}
+        {/* 2038 */}
         <div
           className="absolute"
           style={{
-            top: "54%",
-            left: "10%",
+            top: "47%",
+            left: "13%",
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* 2039 */}
+        <div
+          className="absolute"
+          style={{
+            top: "47%",
+            left: "31%",
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* 2040 */}
+        <div
+          className="absolute"
+          style={{
+            top: "47%",
+            left: "49%",
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* 2041 - Blank */}
+        <div
+          className="absolute"
+          style={{
+            top: "47%",
+            left: "67%",
           }}
         >
           <Bat year="" player="blank" />
@@ -231,8 +230,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "54%",
-            left: "25%",
+            top: "67%",
+            left: "-5%",
           }}
         >
           <Bat year="" player="blank" />
@@ -242,30 +241,41 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "54%",
-            left: "40%",
+            top: "67%",
+            left: "13%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2044 - Blank */}
+        {/* 2044 */}
         <div
           className="absolute"
           style={{
-            top: "54%",
-            left: "55%",
+            top: "67%",
+            left: "31%",
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2045 - Blank */}
+        {/* 2045 */}
         <div
           className="absolute"
           style={{
-            top: "54%",
-            left: "70%",
+            top: "67%",
+            left: "49%",
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* 2046 - Blank */}
+        <div
+          className="absolute"
+          style={{
+            top: "67%",
+            left: "67%",
           }}
         >
           <Bat year="" player="blank" />
