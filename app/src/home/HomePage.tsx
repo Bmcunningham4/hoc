@@ -37,7 +37,11 @@ export function BackButton() {
   return (
     <Link
       to="/"
-      className="absolute top-4 left-4 z-50 px-4 py-2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white rounded-lg transition-all duration-200 no-underline"
+      className="absolute top-4 left-4 z-50 rounded-lg text-black no-underline"
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
+        padding: "0.2rem",
+      }}
     >
       ← Home
     </Link>
