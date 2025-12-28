@@ -1,3 +1,10 @@
+#* This is how it's done goat..
+"""
+Copy the mock setup, basically absolute positioning, using percentages for sizing and positioning.
+- Text needs it's own cqh/cqw shite, then also the transparent image is crucial as well!
+- import blank from "../../shared/assets/blank.png"; 
 
-# style={{ containerType: "size" }} ---- crucial for the parent container..
-# Also the reason that it's not working for TT but is for MK is because TT doesn't have bg image like the board to define a height!!!
+
+# Misc notes:
+- style={{ containerType: "size" }} ---- crucial for the parent container..
+"""

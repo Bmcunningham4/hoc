@@ -22,8 +22,8 @@ export default function MockComponent() {
           src={squareBlueImg}
           className="absolute object-contain"
           style={{
-            top: "10%",
-            left: "48%",
+            top: "12%",
+            left: "56%",
             width: "30%",
             height: "30%",
           }}
