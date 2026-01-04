@@ -7,7 +7,7 @@ import trackImg from "./assets/track.jpg";
 export default function MkPage() {
   return (
     <PageLayout backgroundImage={trackImg}>
-      <Header main="Cunningham v Whitcombe" />
+      <Header main="Cunningham v Whitcombe" blurred={true}/>
       <Board />
       <Countdown date="30-11" />
     </PageLayout>

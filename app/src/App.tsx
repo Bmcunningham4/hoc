@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { HomePage, BackButton } from "./home/HomePage";
+import { HomePage, HomeButton } from "./home/HomePage";
 import MkPage from "./mk/MkPage";
 import TtPage from "./tt/TtPage";
 import MockPage from "./mock/MockPage";
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <HashRouter>
       <div className="relative">
-        <BackButton />
+        <HomeButton />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/mk" element={<MkPage />} />
