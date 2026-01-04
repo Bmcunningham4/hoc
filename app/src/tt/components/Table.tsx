@@ -2,6 +2,11 @@ import Bat from "./Bat";
 import blank from "../../shared/assets/blank.png";
 
 export default function Table() {
+  const HORIZONTAL_GAP = 16.5;
+  const VERTICAL_GAP = 19;
+  const LEFT_START = -2;
+  const TOP_START = -12;
+
   return (
     <div className="relative w-full flex justify-center">
       <img src={blank} alt="Board" className="w-full h-auto max-w-none" />
@@ -10,8 +15,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "-13%",
-            left: "-5%",
+            top: `${TOP_START}%`,
+            left: `${LEFT_START}%`,
           }}
         >
           <Bat year="2022" player="chard" score="3-2" />
@@ -21,8 +26,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "-13%",
-            left: "13%",
+            top: `${TOP_START}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="2023" player="cun" score="3-0" />
@@ -32,8 +37,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "-13%",
-            left: "31%",
+            top: `${TOP_START}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="2024" player="chard" score="3-0" />
@@ -43,8 +48,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "-13%",
-            left: "49%",
+            top: `${TOP_START}%`,
+            left: `${LEFT_START + 3 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="2025" player="cun" score="3-2" />
@@ -54,8 +59,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "-13%",
-            left: "67%",
+            top: `${TOP_START}%`,
+            left: `${LEFT_START + 4 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -65,8 +70,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "7%",
-            left: "-5%",
+            top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -76,8 +81,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "7%",
-            left: "13%",
+            top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -87,8 +92,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "7%",
-            left: "31%",
+            top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -98,8 +103,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "7%",
-            left: "49%",
+            top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START + 3 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -109,8 +114,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "7%",
-            left: "67%",
+            top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START + 4 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -120,8 +125,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "27%",
-            left: "-5%",
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -131,8 +136,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "27%",
-            left: "13%",
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -142,8 +147,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "27%",
-            left: "31%",
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -153,19 +158,19 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "27%",
-            left: "49%",
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 3 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2036 - Blank */}
+        {/* 2036  */}
         <div
           className="absolute"
           style={{
-            top: "27%",
-            left: "67%",
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 4 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -175,8 +180,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "47%",
-            left: "-5%",
+            top: `${TOP_START + 3 * VERTICAL_GAP}%`,
+            left: `${LEFT_START}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -186,8 +191,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "47%",
-            left: "13%",
+            top: `${TOP_START + 3 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -197,8 +202,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "47%",
-            left: "31%",
+            top: `${TOP_START + 3 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -208,19 +213,19 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "47%",
-            left: "49%",
+            top: `${TOP_START + 3 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 3 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2041 - Blank */}
+        {/* 2041 */}
         <div
           className="absolute"
           style={{
-            top: "47%",
-            left: "67%",
+            top: `${TOP_START + 3 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 4 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -230,8 +235,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "67%",
-            left: "-5%",
+            top: `${TOP_START + 4 * VERTICAL_GAP}%`,
+            left: `${LEFT_START}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -241,8 +246,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "67%",
-            left: "13%",
+            top: `${TOP_START + 4 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -252,8 +257,8 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "67%",
-            left: "31%",
+            top: `${TOP_START + 4 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
@@ -263,19 +268,19 @@ export default function Table() {
         <div
           className="absolute"
           style={{
-            top: "67%",
-            left: "49%",
+            top: `${TOP_START + 4 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 3 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />
         </div>
 
-        {/* 2046 - Blank */}
+        {/* 2046  */}
         <div
           className="absolute"
           style={{
-            top: "67%",
-            left: "67%",
+            top: `${TOP_START + 4 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + 4 * HORIZONTAL_GAP}%`,
           }}
         >
           <Bat year="" player="blank" />

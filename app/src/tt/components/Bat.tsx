@@ -29,7 +29,7 @@ export default function Bat({ year, player, score }: BatProps) {
     <div
       className="relative inline-block"
       style={{
-        width: "43cqw",
+        width: "38cqw",
         aspectRatio: "3/4",
       }}
     >
@@ -68,7 +68,7 @@ export default function Bat({ year, player, score }: BatProps) {
               top: "44%",
               left: "43%",
               transform: "translateX(-50%)",
-              fontSize: "3.1cqw",
+              fontSize: "3.8cqw",
             }}
           >
             {score}
