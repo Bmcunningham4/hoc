@@ -9,11 +9,11 @@ import batChard from "./assets/bat-chard.png";
 export default function TtPage() {
   return (
     <PageLayout backgroundImage={ttBgImg}>
-      <Header 
-        main="TT Championships" 
-        secondary="Cunningham v Harding" 
-        mLogo1={batCun}
-        mLogo2={batChard} 
+      <Header
+        main="TT Championships"
+        secondary="Cunningham v Harding"
+        sLogo1={batCun}
+        sLogo2={batChard}
       />
       <Table />
       <Countdown date="19-12" />

@@ -46,11 +46,7 @@ export function HomeButton() {
         height: "2.5rem",
       }}
     >
-      <img 
-        src={homeIcon} 
-        alt="Home" 
-        className="w-6 h-6"
-      />
+      <img src={homeIcon} alt="Home" className="w-6 h-6" />
     </Link>
   );
 }

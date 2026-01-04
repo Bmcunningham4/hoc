@@ -9,7 +9,12 @@ import coopsImg from "./assets/cooper-trooper.png";
 export default function MkPage() {
   return (
     <PageLayout backgroundImage={trackImg}>
-      <Header main="Cunningham v Witcombe" blurred={true} mLogo1={dryBonesImg} mLogo2={coopsImg} />
+      <Header
+        main="Cunningham v Witcombe"
+        blurred={true}
+        mLogo1={dryBonesImg}
+        mLogo2={coopsImg}
+      />
       <Board />
       <Countdown date="30-11" />
     </PageLayout>
