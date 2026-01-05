@@ -14,6 +14,7 @@ export default function TtPage() {
         secondary="Cunningham v Harding"
         sLogo1={batCun}
         sLogo2={batChard}
+        sLogoSize={3}
       />
       <Table />
       <Countdown date="19-12" />

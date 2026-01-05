@@ -7,6 +7,7 @@ interface HeaderProps {
   mLogo2?: string;
   sLogo1?: string;
   sLogo2?: string;
+  sLogoSize?: 1 | 2 | 3 | 4 | 5;
 }
 
 export default function Header({
@@ -18,6 +19,7 @@ export default function Header({
   mLogo2,
   sLogo1,
   sLogo2,
+  sLogoSize = 2,
 }: HeaderProps) {
   const getBackgroundColor = () => {
     if (!blurred) return {};
@@ -27,6 +29,17 @@ export default function Header({
         color === "white" ? "rgba(0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.2)",
       padding: "0.5rem 1.5rem",
     };
+  };
+
+  const getSecondaryLogoSize = (size: number) => {
+    const sizeMap = {
+      1: "h-4",   // 16px
+      2: "h-8",   // 32px  
+      3: "h-12",  // 48px
+      4: "h-16",  // 64px
+      5: "h-20",  // 80px
+    };
+    return sizeMap[size as keyof typeof sizeMap] || "h-8";
   };
 
   return (
@@ -45,7 +58,11 @@ export default function Header({
         {secondary && (
           <div className="flex items-center justify-center gap-2 mt-1">
             {sLogo1 && (
-              <img src={sLogo1} alt="Secondary Logo 1" className="h-6 w-auto" />
+              <img 
+                src={sLogo1} 
+                alt="Secondary Logo 1" 
+                className={`${getSecondaryLogoSize(sLogoSize)} w-auto border-2 border-red-500`}
+              />
             )}
             <p
               className={`text-lg drop-shadow-md ${color === "white" ? "text-gray-300" : "text-gray-700"}`}
@@ -53,7 +70,11 @@ export default function Header({
               {secondary}
             </p>
             {sLogo2 && (
-              <img src={sLogo2} alt="Secondary Logo 2" className="h-6 w-auto" />
+              <img 
+                src={sLogo2} 
+                alt="Secondary Logo 2" 
+                className={`${getSecondaryLogoSize(sLogoSize)} w-auto`}
+              />
             )}
           </div>
         )}
