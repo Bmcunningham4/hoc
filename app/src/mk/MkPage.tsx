@@ -15,6 +15,7 @@ export default function MkPage() {
         mLogo1={dryBonesImg}
         mLogo2={coopsImg}
         mLogoSize={2}
+        mHeadingSize={3}
       />
       <Board />
       <Countdown date="30-11" />
