@@ -15,6 +15,7 @@ export default function TtPage() {
         sLogo1={batCun}
         sLogo2={batChard}
         sLogoSize={3}
+        sLogoRotate={true}
       />
       <Table />
       <Countdown date="19-12" />
