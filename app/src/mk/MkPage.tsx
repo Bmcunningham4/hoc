@@ -14,8 +14,8 @@ export default function MkPage() {
         blurred={true}
         mLogo1={dryBonesImg}
         mLogo2={coopsImg}
-        mLogoSize={2}
-        mHeadingSize={3}
+        mLogoSize={1}
+        mHeadingSize={2}
       />
       <Board />
       <Countdown date="30-11" />
