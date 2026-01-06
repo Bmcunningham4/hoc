@@ -25,6 +25,12 @@ export function HomePage() {
         >
           🏓 Table Tennis
         </Link>
+        <Link
+          to="/gk"
+          className="px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center no-underline"
+        >
+          🏆 GK Championship
+        </Link>
       </div>
     </div>
   );
