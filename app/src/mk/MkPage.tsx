@@ -10,12 +10,12 @@ export default function MkPage() {
   return (
     <PageLayout backgroundImage={trackImg}>
       <Header
-        main="Cunningham v Witcombe"
+        main="Cun v Witcombe"
         blurred={true}
         mLogo1={dryBonesImg}
         mLogo2={coopsImg}
-        mLogoSize={1}
-        mHeadingSize={2}
+        mLogoSize={2}
+        mHeadingSize={4}
       />
       <Board />
       <Countdown date="30-11" />
