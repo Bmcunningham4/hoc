@@ -50,11 +50,11 @@ export default function Header({
 
   const getHeadingSize = (size: number) => {
     const sizeMap = {
-      1: "text-lg",   // 18px
-      2: "text-xl",   // 20px
-      3: "text-2xl",  // 24px
-      4: "text-3xl",  // 30px
-      5: "text-4xl",  // 36px
+      1: "text-lg", // 18px
+      2: "text-xl", // 20px
+      3: "text-2xl", // 24px
+      4: "text-3xl", // 30px
+      5: "text-4xl", // 36px
     };
     return sizeMap[size as keyof typeof sizeMap] || "text-4xl";
   };
@@ -73,7 +73,9 @@ export default function Header({
               className={`${getLogoSize(mLogoSize)} w-auto`}
             />
           )}
-          <h1 className={`${getHeadingSize(mHeadingSize)} font-bold drop-shadow-lg text-${color}`}>
+          <h1
+            className={`${getHeadingSize(mHeadingSize)} font-bold drop-shadow-lg text-${color}`}
+          >
             {main}
           </h1>
           {mLogo2 && (
