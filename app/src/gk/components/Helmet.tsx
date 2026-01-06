@@ -1,20 +1,26 @@
 import helmetBen from "../assets/helmet-ben.png";
 import helmetJim from "../assets/helmet-jim.png";
+import helmetCook from "../assets/helmet-cook.png";
+import helmetDuncan from "../assets/helmet-duncan.png";
 import helmetPlain from "../assets/helmet-plain.png";
 
 interface BatProps {
   year: string;
-  player: "cun" | "chard" | "blank";
-  score?: string;
+  player: "ben" | "jim" | "cook" | "duncan" | "blank";
+  name?: string;
 }
 
-export default function Bat({ year, player, score }: BatProps) {
+export default function Bat({ year, player, name }: BatProps) {
   const getBatImg = () => {
     switch (player) {
-      case "cun":
+      case "ben":
         return helmetBen;
-      case "chard":
+      case "jim":
         return helmetJim;
+      case "cook":
+        return helmetCook;
+      case "duncan":
+        return helmetDuncan;
       case "blank":
         return helmetPlain;
       default:
@@ -47,8 +53,8 @@ export default function Bat({ year, player, score }: BatProps) {
         <div
           className="absolute text-white font-bold drop-shadow-md leading-none"
           style={{
-            top: "34%",
-            left: "44%",
+            top: "42%",
+            left: "35%",
             transform: "translateX(-50%)",
             fontSize: "2.8cqw",
           }}
@@ -57,17 +63,17 @@ export default function Bat({ year, player, score }: BatProps) {
         </div>
 
         {/* Score in the middle - only show if not blank */}
-        {!isBlank && score && (
+        {!isBlank && name && (
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "44%",
-              left: "43%",
+              top: "49%",
+              left: "39%",
               transform: "translateX(-50%)",
-              fontSize: "3.8cqw",
+              fontSize: "1.8cqw",
             }}
           >
-            {score}
+            {name}
           </div>
         )}
       </div>

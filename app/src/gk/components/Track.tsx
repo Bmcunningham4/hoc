@@ -19,7 +19,7 @@ export default function Table() {
             left: `${LEFT_START}%`,
           }}
         >
-          <Bat year="2022" player="chard" score="3-2" />
+          <Bat year="2022" player="duncan" name="Duncan Grainger" />
         </div>
 
         {/* 2023 */}
@@ -30,7 +30,7 @@ export default function Table() {
             left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
-          <Bat year="2023" player="cun" score="3-0" />
+          <Bat year="2023" player="jim" name="James Cunningham" />
         </div>
 
         {/* 2024 */}
@@ -41,7 +41,7 @@ export default function Table() {
             left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
-          <Bat year="2024" player="chard" score="3-0" />
+          <Bat year="2024" player="ben" name="Ben Cunningham" />
         </div>
 
         {/* 2025 */}
@@ -52,7 +52,7 @@ export default function Table() {
             left: `${LEFT_START}%`,
           }}
         >
-          <Bat year="" player="blank" />
+          <Bat year="2025" player="cook" name="Elliot Cook" />
         </div>
 
         {/* 2026 */}
@@ -71,6 +71,39 @@ export default function Table() {
           className="absolute"
           style={{
             top: `${TOP_START + VERTICAL_GAP}%`,
+            left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* Third row - 2028 */}
+        <div
+          className="absolute"
+          style={{
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START}%`,
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* Third row - 2029 */}
+        <div
+          className="absolute"
+          style={{
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
+            left: `${LEFT_START + HORIZONTAL_GAP}%`,
+          }}
+        >
+          <Bat year="" player="blank" />
+        </div>
+
+        {/* Third row - 2030 */}
+        <div
+          className="absolute"
+          style={{
+            top: `${TOP_START + 2 * VERTICAL_GAP}%`,
             left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
