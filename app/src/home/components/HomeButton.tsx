@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import homeIcon from "../../shared/assets/home.png";
 
-export function HomeButton() {
+export default function HomeButton() {
   const location = useLocation();
 
   if (location.pathname === "/") return null; // || location.pathname === "hoc/#/gk" ??
