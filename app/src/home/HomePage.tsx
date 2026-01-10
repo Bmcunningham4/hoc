@@ -38,7 +38,7 @@ export function HomePage() {
 export function HomeButton() {
   const location = useLocation();
 
-  if (location.pathname === "/") return null;
+  if (location.pathname === "/") return null; // || location.pathname === "hoc/#/gk" ??
 
   return (
     <Link
