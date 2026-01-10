@@ -6,7 +6,12 @@ import helmetPlain from "../assets/helmet-plain.png";
 
 interface BatProps {
   year: string;
-  first?: "Ben Cunningham" | "James Cunningham" | "Elliot Cook" | "Duncan Grainger" | "blank";
+  first?:
+    | "Ben Cunningham"
+    | "James Cunningham"
+    | "Elliot Cook"
+    | "Duncan Grainger"
+    | "blank";
   second?: string;
   third?: string;
 }

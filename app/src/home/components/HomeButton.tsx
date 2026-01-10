@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import homeIcon from "../shared/assets/home.png";
+import homeIcon from "../../shared/assets/home.png";
 
 export function HomeButton() {
   const location = useLocation();

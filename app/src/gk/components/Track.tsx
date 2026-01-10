@@ -19,7 +19,12 @@ export default function Table() {
             left: `${LEFT_START}%`,
           }}
         >
-          <Bat year="2022" first="Duncan Grainger" second="James Cunningham" third="Reddy...?" />
+          <Bat
+            year="2022"
+            first="Duncan Grainger"
+            second="James Cunningham"
+            third="Reddy...?"
+          />
         </div>
 
         {/* 2023 */}
@@ -30,7 +35,12 @@ export default function Table() {
             left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
-          <Bat year="2023" first="James Cunningham" second="Kirby Seely" third="James Taylor" />
+          <Bat
+            year="2023"
+            first="James Cunningham"
+            second="Kirby Seely"
+            third="James Taylor"
+          />
         </div>
 
         {/* 2024 */}
@@ -41,7 +51,12 @@ export default function Table() {
             left: `${LEFT_START + 2 * HORIZONTAL_GAP}%`,
           }}
         >
-          <Bat year="2024" first="Ben Cunningham" second="James Cunningham" third="Sam Fisher" />
+          <Bat
+            year="2024"
+            first="Ben Cunningham"
+            second="James Cunningham"
+            third="Sam Fisher"
+          />
         </div>
 
         {/* 2025 */}
@@ -52,7 +67,12 @@ export default function Table() {
             left: `${LEFT_START}%`,
           }}
         >
-          <Bat year="2025" first="Elliot Cook" second="James Cunningham" third="Ben Cunningham" />
+          <Bat
+            year="2025"
+            first="Elliot Cook"
+            second="James Cunningham"
+            third="Ben Cunningham"
+          />
         </div>
 
         {/* 2026 */}

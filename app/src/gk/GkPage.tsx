@@ -2,7 +2,7 @@ import Track from "./components/Track";
 import PageLayout from "../shared/PageLayout";
 import Header from "../shared/Header";
 import Countdown from "../shared/Countdown";
-import trackImg from "./assets/track-test.jpg";
+import trackImg from "./assets/track.jpg";
 
 export default function GkPage() {
   return (
