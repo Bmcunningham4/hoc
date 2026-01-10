@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { HomePage, HomeButton } from "./home/HomePage";
+import { HomeButton } from "./home/components/HomeButton";
+import { HomePage } from "./home/HomePage";
 import MkPage from "./mk/MkPage";
 import GkPage from "./gk/GkPage";
 import TtPage from "./tt/TtPage";
