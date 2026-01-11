@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Trophy from "./Trophy";
-import HomeBg from "../assets/home-bg.jpg";
+import HomeBg from "../assets/home-bg.png";
 import mkTrophy from "../assets/trophy-mk.png";
 import ttTrophy from "../assets/trophy-tt.png";
 import gkTrophy from "../assets/trophy-gk.png";

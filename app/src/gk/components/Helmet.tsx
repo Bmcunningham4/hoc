@@ -74,10 +74,10 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "43%",
+              top: "44%",
               left: "39%",
               transform: "translateX(-50%)",
-              fontSize: "1.8cqw",
+              fontSize: "1.5cqw",
             }}
           >
             {first}
@@ -89,10 +89,10 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "47%",
+              top: "48%",
               left: "39%",
               transform: "translateX(-50%)",
-              fontSize: "1.8cqw",
+              fontSize: "1.5cqw",
             }}
           >
             {second}
@@ -104,10 +104,10 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "51%",
+              top: "52%",
               left: "39%",
               transform: "translateX(-50%)",
-              fontSize: "1.8cqw",
+              fontSize: "1.5cqw",
             }}
           >
             {third}
