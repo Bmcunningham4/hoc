@@ -6,7 +6,7 @@ import trackImg from "../gk/assets/track.jpg";
 export default function HomePage() {
   return (
     <PageLayout backgroundImage={trackImg}>
-      <Header main="Hoc" />
+      <Header main="Hoc - Temp" />
       <Cabinet />
     </PageLayout>
   );

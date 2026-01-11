@@ -3,6 +3,7 @@ import Trophy from "./Trophy";
 import HomeBg from "../assets/home-bg.jpg";
 import mkTrophy from "../assets/trophy-mk.png";
 import ttTrophy from "../assets/trophy-tt.png";
+import gkTrophy from "../assets/trophy-gk.png";
 
 export default function Cabinet() {
   return (
@@ -12,41 +13,37 @@ export default function Cabinet() {
         {/* Mk Trophy */}
         <Link
           to="/mk"
-          className="px-12 py-6 bg-red-600 hover:bg-red-700 text-white text-2xl font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center no-underline"
+          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(239,68,68,0.6)] hover:drop-shadow-[0_12px_20px_rgba(239,68,68,0.8)] cursor-pointer"
+          style={{
+            top: "18%",
+            left: "31%",
+          }}
         >
-          <div
-            className="absolute"
-            style={{
-              top: "7%",
-              left: "27%",
-            }}
-          >
-            <Trophy trophyImg={mkTrophy} year="2022" />
-          </div>
+          <Trophy trophyImg={mkTrophy} size="18" year="test" />
         </Link>
 
         {/* Tt Trophy */}
         <Link
           to="/tt"
-          className="px-12 py-6 bg-green-600 hover:bg-green-700 text-white text-2xl font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center no-underline"
+          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(34,197,94,0.6)] hover:drop-shadow-[0_12px_20px_rgba(34,197,94,0.8)] cursor-pointer"
+          style={{
+            top: "24%",
+            left: "76%",
+          }}
         >
-          <div
-            className="absolute"
-            style={{
-              top: "47%",
-              left: "37%",
-            }}
-          >
-            <Trophy trophyImg={ttTrophy} year="2022" />
-          </div>
+          <Trophy trophyImg={ttTrophy} size="12" year="" />
         </Link>
 
-        {/* Gk Trophy ----- coming soon.. */}
+        {/* Gk Trophy */}
         <Link
           to="/gk"
-          className="px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-center no-underline"
+          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(147,51,234,0.6)] hover:drop-shadow-[0_12px_20px_rgba(147,51,234,0.8)] cursor-pointer"
+          style={{
+            top: "39%",
+            left: "57%",
+          }}
         >
-          🏆 gk
+          <Trophy trophyImg={gkTrophy} size="7" year="" />
         </Link>
       </div>
     </div>

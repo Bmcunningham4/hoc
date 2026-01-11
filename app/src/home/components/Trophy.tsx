@@ -1,16 +1,15 @@
 interface TrophyProps {
   trophyImg: string;
-  // size: string;
+  size?: string;
   year: string;
 }
 
-export default function Trophy({ trophyImg, year }: TrophyProps) {
-  // const imgSize = "size{size}" ------ can't figure this out..
+export default function Trophy({ trophyImg, size = "30", year }: TrophyProps) {
   return (
     <div
       className="relative inline-block"
       style={{
-        width: "38cq",
+        width: `${size}cqw`,
         aspectRatio: "3/4",
       }}
     >
