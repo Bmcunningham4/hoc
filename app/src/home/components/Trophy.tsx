@@ -4,7 +4,7 @@ interface TrophyProps {
   year: string;
 }
 
-export default function Trophy({ trophyImg, size = "30", year }: TrophyProps) {
+export default function Trophy({ trophyImg, size = "17", year }: TrophyProps) {
   return (
     <div
       className="relative inline-block"

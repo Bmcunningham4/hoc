@@ -1,11 +1,11 @@
 import Cabinet from "./components/Cabinet";
 import PageLayout from "../shared/PageLayout";
 import Header from "../shared/Header";
-import trackImg from "../gk/assets/track.jpg";
+import WallBg from "./assets/wall-bg.jpg";
 
 export default function HomePage() {
   return (
-    <PageLayout backgroundImage={trackImg}>
+    <PageLayout backgroundImage={WallBg}>
       <Header main="Hoc - Temp" />
       <Cabinet />
     </PageLayout>
