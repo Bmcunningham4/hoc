@@ -17,7 +17,12 @@ export default function MkPage() {
         mLogoSize={2}
         mHeadingSize={4}
       />
-      <Board />
+      <div
+        className="w-full max-w-[600px] flex-shrink"
+        style={{ width: "120vw" }}
+      >
+        <Board />
+      </div>
       <Countdown date="30-11" />
     </PageLayout>
   );

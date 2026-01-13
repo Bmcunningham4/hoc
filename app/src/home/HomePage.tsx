@@ -5,7 +5,12 @@ import WallBg from "./assets/wall-bg.png";
 export default function HomePage() {
   return (
     <PageLayout backgroundImage={WallBg}>
-      <Cabinet />
+      <div
+        className="w-full max-w-[700px] flex-shrink"
+        style={{ width: "120vw" }}
+      >
+        <Cabinet />
+      </div>
     </PageLayout>
   );
 }

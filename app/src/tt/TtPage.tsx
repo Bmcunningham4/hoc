@@ -17,7 +17,9 @@ export default function TtPage() {
         sLogoSize={3}
         sLogoRotate={true}
       />
-      <Table />
+      <div className="w-full max-w-[600px] flex-shrink">
+        <Table />
+      </div>
       <Countdown date="19-12" />
     </PageLayout>
   );

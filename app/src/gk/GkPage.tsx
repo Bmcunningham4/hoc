@@ -13,7 +13,9 @@ export default function GkPage() {
         blurred={true}
         color="white"
       />
-      <Track />
+      <div className="w-full max-w-[700px] flex-shrink">
+        <Track />
+      </div>
       <Countdown date="20-12" />
     </PageLayout>
   );
