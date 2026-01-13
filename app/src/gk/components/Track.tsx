@@ -2,8 +2,8 @@ import Bat from "./Helmet";
 import blank from "../../shared/assets/blank.png";
 
 export default function Table() {
-  const HORIZONTAL_GAP = 30;
-  const VERTICAL_GAP = 30;
+  const HORIZONTAL_GAP = 32;
+  const VERTICAL_GAP = 35;
   const LEFT_START = -2;
   const TOP_START = -12;
 
