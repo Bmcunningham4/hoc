@@ -1,7 +1,7 @@
 import Cabinet from "./components/Cabinet";
 import PageLayout from "../shared/PageLayout";
 import Header from "../shared/Header";
-import WallBg from "./assets/wall-bg.jpg";
+import WallBg from "./assets/wall-bg.png";
 
 export default function HomePage() {
   return (
