@@ -1,10 +1,8 @@
 
 ## Description:
-Lit project that shows...
-
+Littt Hobby project for tracking the yearly battles:
+- http://localhost:5173/hoc/#/
 
 ## Todos
-- Fix page layout, maybe so it even works on laptops!!
-- Fix Home page!
 - Make a better route not found page..
 - Add automatic pre-commit formatting hook..

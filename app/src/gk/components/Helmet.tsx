@@ -80,7 +80,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
               fontSize: "1.5cqw",
             }}
           >
-            {first}
+            1. {first} 🏆
           </div>
         )}
 
@@ -95,7 +95,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
               fontSize: "1.5cqw",
             }}
           >
-            {second}
+            2. {second}
           </div>
         )}
 
@@ -110,7 +110,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
               fontSize: "1.5cqw",
             }}
           >
-            {third}
+            3. {third}
           </div>
         )}
       </div>

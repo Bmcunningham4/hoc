@@ -11,7 +11,7 @@ export default function PageLayout({
 }: PageLayoutProps) {
   return (
     <div
-      className="h-screen w-full flex flex-col items-center justify-center m-0 p-0 bg-cover bg-center bg-no-repeat overflow-x-hidden"
+      className="h-screen w-full flex flex-col items-center justify-around m-0 p-0 bg-cover bg-center bg-no-repeat overflow-x-hidden"
       style={{
         backgroundImage: `url(${backgroundImage})`,
       }}

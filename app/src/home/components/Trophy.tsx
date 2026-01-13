@@ -1,10 +1,9 @@
 interface TrophyProps {
   trophyImg: string;
   size?: string;
-  year: string;
 }
 
-export default function Trophy({ trophyImg, size = "17", year }: TrophyProps) {
+export default function Trophy({ trophyImg, size = "17" }: TrophyProps) {
   return (
     <div
       className="relative inline-block"
@@ -20,22 +19,6 @@ export default function Trophy({ trophyImg, size = "17", year }: TrophyProps) {
           alt="trophyImg"
           className="w-full h-full object-contain"
         />
-      </div>
-
-      {/* Year text */}
-      <div className="absolute inset-0">
-        <div
-          className="absolute text-white font-bold drop-shadow-md leading-none"
-          style={{
-            top: "76%",
-            left: "35%",
-            transform: "translateX(-50%)",
-            fontSize: "2.8cqw",
-            backgroundColor: "black", // This will need to be changed, obviously!!
-          }}
-        >
-          {year}
-        </div>
       </div>
     </div>
   );

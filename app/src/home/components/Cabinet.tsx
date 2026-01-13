@@ -13,13 +13,15 @@ export default function Cabinet() {
         {/* Mk Trophy */}
         <Link
           to="/mk"
-          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(239,68,68,0.6)] hover:drop-shadow-[0_12px_20px_rgba(239,68,68,0.8)] cursor-pointer"
+          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_12px_20px_rgba(239,68,68,0.9)] hover:drop-shadow-[0_16px_32px_rgba(239,68,68,1.0)] cursor-pointer"
           style={{
             top: "13%",
             left: "33%",
+            filter:
+              "drop-shadow(0 0 15px rgba(239,68,68,0.7)) drop-shadow(0 8px 25px rgba(239,68,68,0.5))",
           }}
         >
-          <Trophy trophyImg={mkTrophy} year="test" />
+          <Trophy trophyImg={mkTrophy} />
         </Link>
 
         {/* Tt Trophy */}
@@ -31,7 +33,7 @@ export default function Cabinet() {
             left: "52%",
           }}
         >
-          <Trophy trophyImg={ttTrophy} year="" />
+          <Trophy trophyImg={ttTrophy} />
         </Link>
 
         {/* Gk Trophy */}
@@ -43,7 +45,7 @@ export default function Cabinet() {
             left: "52%",
           }}
         >
-          <Trophy trophyImg={gkTrophy} year="" />
+          <Trophy trophyImg={gkTrophy} />
         </Link>
       </div>
     </div>
