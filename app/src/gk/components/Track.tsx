@@ -39,7 +39,7 @@ export default function Table() {
             year="2023"
             first="Jim Cunningham"
             second="Kirby Seely"
-            third="Jim Taylor"
+            third="James Taylor"
           />
         </div>
 

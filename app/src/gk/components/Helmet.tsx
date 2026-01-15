@@ -61,7 +61,13 @@ export default function Bat({ year, first, second, third }: BatProps) {
       />
 
       {/* Helmet  */}
-      <div className="relative w-full h-full" style={{ zIndex: 2 }}>
+      <div
+        className="relative w-full h-full"
+        style={{
+          zIndex: 2,
+          top: first === "Jim Cunningham" ? "-1%" : "0%",
+        }}
+      >
         <img
           src={selectedHelmetImg}
           alt="Gokart Helmet"
@@ -88,9 +94,8 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "44%",
-              left: "39%",
-              transform: "translateX(-50%)",
+              top: "45%",
+              left: "22%",
               fontSize: "1.3cqw",
             }}
           >
@@ -103,9 +108,8 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "48%",
-              left: "39%",
-              transform: "translateX(-50%)",
+              top: "49%",
+              left: "22%",
               fontSize: "1.3cqw",
             }}
           >
@@ -118,9 +122,8 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "52%",
-              left: "39%",
-              transform: "translateX(-50%)",
+              top: "53%",
+              left: "22%",
               fontSize: "1.3cqw",
             }}
           >
