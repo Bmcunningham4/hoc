@@ -13,12 +13,11 @@ export default function Cabinet() {
         {/* Mk Trophy */}
         <Link
           to="/mk"
-          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_12px_20px_rgba(239,68,68,0.9)] hover:drop-shadow-[0_16px_32px_rgba(239,68,68,1.0)] cursor-pointer"
+          className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
           style={{
             top: "13%",
             left: "33%",
-            filter:
-              "drop-shadow(0 0 15px rgba(239,68,68,0.7)) drop-shadow(0 8px 25px rgba(239,68,68,0.5))",
+            animation: "glow-red 2s ease-in-out infinite alternate",
           }}
         >
           <Trophy trophyImg={mkTrophy} />
@@ -27,10 +26,11 @@ export default function Cabinet() {
         {/* Tt Trophy */}
         <Link
           to="/tt"
-          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(34,197,94,0.6)] hover:drop-shadow-[0_12px_20px_rgba(34,197,94,0.8)] cursor-pointer"
+          className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
           style={{
             top: "26%",
             left: "52%",
+            animation: "glow-green 2.5s ease-in-out infinite alternate 0.8s",
           }}
         >
           <Trophy trophyImg={ttTrophy} />
@@ -39,15 +39,31 @@ export default function Cabinet() {
         {/* Gk Trophy */}
         <Link
           to="/gk"
-          className="absolute transition-all duration-300 transform hover:scale-110 drop-shadow-[0_8px_12px_rgba(147,51,234,0.6)] hover:drop-shadow-[0_12px_20px_rgba(147,51,234,0.8)] cursor-pointer"
+          className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
           style={{
             top: "38%",
             left: "52%",
+            animation: "glow-purple 3s ease-in-out infinite alternate 1.6s",
           }}
         >
           <Trophy trophyImg={gkTrophy} />
         </Link>
       </div>
+
+      <style>{`
+        @keyframes glow-red {
+          from { filter: drop-shadow(0 0 15px rgba(239,68,68,0.6)) drop-shadow(0 8px 25px rgba(239,68,68,0.4)); }
+          to { filter: drop-shadow(0 0 25px rgba(239,68,68,1.0)) drop-shadow(0 8px 30px rgba(239,68,68,0.8)); }
+        }
+        @keyframes glow-green {
+          from { filter: drop-shadow(0 0 15px rgba(34,197,94,0.6)) drop-shadow(0 8px 25px rgba(34,197,94,0.4)); }
+          to { filter: drop-shadow(0 0 25px rgba(34,197,94,1.0)) drop-shadow(0 8px 30px rgba(34,197,94,0.8)); }
+        }
+        @keyframes glow-purple {
+          from { filter: drop-shadow(0 0 15px rgba(147,51,234,0.6)) drop-shadow(0 8px 25px rgba(147,51,234,0.4)); }
+          to { filter: drop-shadow(0 0 25px rgba(147,51,234,1.0)) drop-shadow(0 8px 30px rgba(147,51,234,0.8)); }
+        }
+      `}</style>
     </div>
   );
 }
