@@ -3,9 +3,9 @@ import blank from "../../shared/assets/blank.png";
 
 export default function Table() {
   const HORIZONTAL_GAP = 32;
-  const VERTICAL_GAP = 35;
+  const VERTICAL_GAP = 33;
   const LEFT_START = -2;
-  const TOP_START = -12;
+  const TOP_START = -10;
 
   return (
     <div className="relative w-full flex justify-center">
@@ -22,7 +22,7 @@ export default function Table() {
           <Bat
             year="2022"
             first="Duncan Grainger"
-            second="James Cunningham"
+            second="Jim Cunningham"
             third="Reddy...?"
           />
         </div>
@@ -37,9 +37,9 @@ export default function Table() {
         >
           <Bat
             year="2023"
-            first="James Cunningham"
+            first="Jim Cunningham"
             second="Kirby Seely"
-            third="James Taylor"
+            third="Jim Taylor"
           />
         </div>
 
@@ -54,7 +54,7 @@ export default function Table() {
           <Bat
             year="2024"
             first="Ben Cunningham"
-            second="James Cunningham"
+            second="Jim Cunningham"
             third="Sam Fisher"
           />
         </div>
@@ -70,7 +70,7 @@ export default function Table() {
           <Bat
             year="2025"
             first="Elliot Cook"
-            second="James Cunningham"
+            second="Jim Cunningham"
             third="Ben Cunningham"
           />
         </div>
