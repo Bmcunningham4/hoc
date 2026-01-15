@@ -7,7 +7,7 @@ export default function HomePage() {
     <PageLayout backgroundImage={WallBg}>
       <div
         className="w-full max-w-[700px] flex-shrink"
-        style={{ width: "120vw" }}
+        style={{ width: "120vw", marginTop: "7%" }}
       >
         <Cabinet />
       </div>

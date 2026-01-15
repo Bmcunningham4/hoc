@@ -65,7 +65,9 @@ export default function Bat({ year, first, second, third }: BatProps) {
         className="relative w-full h-full"
         style={{
           zIndex: 2,
-          top: first === "Jim Cunningham" ? "-1%" : "0%",
+          top: ["Jim Cunningham", "Elliot Cook"].includes(first || "")
+            ? "-1%"
+            : "0%",
         }}
       >
         <img
@@ -89,12 +91,12 @@ export default function Bat({ year, first, second, third }: BatProps) {
           {year}
         </div>
 
-        {/* First place  */}
+        {/* First */}
         {!isBlank && first && (
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "45%",
+              top: "44%",
               left: "22%",
               fontSize: "1.3cqw",
             }}
@@ -108,7 +110,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "49%",
+              top: "48%",
               left: "22%",
               fontSize: "1.3cqw",
             }}
@@ -122,7 +124,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold drop-shadow-md leading-none"
             style={{
-              top: "53%",
+              top: "52%",
               left: "22%",
               fontSize: "1.3cqw",
             }}
