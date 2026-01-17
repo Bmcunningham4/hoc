@@ -23,7 +23,7 @@ export default function Table() {
             year="2022"
             first="Duncan Grainger"
             second="Jim Cunningham"
-            third="Reddy...?"
+            third="Andrew Slee"
           />
         </div>
 
