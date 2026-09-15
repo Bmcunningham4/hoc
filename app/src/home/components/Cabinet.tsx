@@ -36,6 +36,19 @@ export default function Cabinet() {
           <Trophy trophyImg={ttTrophy} />
         </Link>
 
+        {/* Tt Hendo Trophy */}
+        <Link
+          to="/tt_hendo"
+          className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
+          style={{
+            top: "26%",
+            left: "32%",
+            animation: "glow-green 2.5s ease-in-out infinite alternate 0.8s",
+          }}
+        >
+          <Trophy trophyImg={ttTrophy} />
+        </Link>
+
         {/* Gk Trophy */}
         <Link
           to="/gk"
