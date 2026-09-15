@@ -6,7 +6,7 @@ import ttBgImg from "./assets/tt-bg.png";
 import batCun from "./assets/bat-cun.png";
 import batChard from "./assets/bat-chard.png";
 
-export default function TtPage() {
+export default function TtChardPage() {
   return (
     <PageLayout backgroundImage={ttBgImg}>
       <Header

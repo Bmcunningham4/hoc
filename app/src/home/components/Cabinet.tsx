@@ -23,9 +23,9 @@ export default function Cabinet() {
           <Trophy trophyImg={mkTrophy} />
         </Link>
 
-        {/* Tt Trophy */}
+        {/* Tt Chard Trophy */}
         <Link
-          to="/tt"
+          to="/tt_chard"
           className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
           style={{
             top: "26%",
