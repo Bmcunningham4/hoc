@@ -3,6 +3,7 @@ import Trophy from "./Trophy";
 import CabinetBg from "../assets/cabinet-bg.png";
 import mkTrophy from "../assets/trophy-mk.png";
 import ttTrophy from "../assets/trophy-tt.png";
+import ttTrophyHendo from "../assets/trophy-tt-hendo.png";
 import gkTrophy from "../assets/trophy-gk.png";
 
 export default function Cabinet() {
@@ -41,12 +42,12 @@ export default function Cabinet() {
           to="/tt_hendo"
           className="absolute transition-all duration-300 transform hover:scale-110 cursor-pointer"
           style={{
-            top: "26%",
-            left: "32%",
+            top: "25%",
+            left: "33%",
             animation: "glow-green 2.5s ease-in-out infinite alternate 0.8s",
           }}
         >
-          <Trophy trophyImg={ttTrophy} />
+          <Trophy trophyImg={ttTrophyHendo} />
         </Link>
 
         {/* Gk Trophy */}
