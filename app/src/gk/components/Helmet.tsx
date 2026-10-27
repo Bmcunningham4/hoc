@@ -41,6 +41,8 @@ export default function Bat({ year, first, second, third }: BatProps) {
 
   const selectedHelmetImg = getHelmet();
   const isBlank = first === "blank";
+  // Ben's helmet has a higher visor, so lift the names to sit inside it
+  const textTop = first === "Ben Cunningham" ? 42.8 : 44;
 
   return (
     <div
@@ -101,7 +103,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold leading-none"
             style={{
-              top: "44%",
+              top: `${textTop}%`,
               left: "22%",
               fontSize: "1.3cqw",
               textShadow: NAME_SHADOW,
@@ -116,7 +118,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold leading-none"
             style={{
-              top: "48%",
+              top: `${textTop + 4}%`,
               left: "22%",
               fontSize: "1.3cqw",
               textShadow: NAME_SHADOW,
@@ -131,7 +133,7 @@ export default function Bat({ year, first, second, third }: BatProps) {
           <div
             className="absolute text-white font-bold leading-none"
             style={{
-              top: "52%",
+              top: `${textTop + 8}%`,
               left: "22%",
               fontSize: "1.3cqw",
               textShadow: NAME_SHADOW,
