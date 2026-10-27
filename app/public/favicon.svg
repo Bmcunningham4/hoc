@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8860b"/>
+      <stop offset="0.35" stop-color="#ffd84d"/>
+      <stop offset="0.6" stop-color="#f5b800"/>
+      <stop offset="1" stop-color="#a87400"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#5c3d00" stroke-width="2" stroke-linejoin="round">
+    <!-- handles -->
+    <path d="M18 14 H9 C9 25 13 30 20 31" fill="none" stroke="#5c3d00" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M46 14 H55 C55 25 51 30 44 31" fill="none" stroke="#5c3d00" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M18 14 H9 C9 25 13 30 20 31" fill="none" stroke="#f5b800" stroke-width="3" stroke-linecap="round"/>
+    <path d="M46 14 H55 C55 25 51 30 44 31" fill="none" stroke="#f5b800" stroke-width="3" stroke-linecap="round"/>
+    <!-- cup -->
+    <path d="M16 8 H48 V22 C48 33 41 40 32 40 C23 40 16 33 16 22 Z" fill="url(#gold)"/>
+    <!-- stem -->
+    <path d="M28 39 H36 L35 47 H29 Z" fill="url(#gold)"/>
+    <!-- base -->
+    <rect x="21" y="46" width="22" height="5" rx="1.5" fill="url(#gold)"/>
+    <rect x="16" y="51" width="32" height="8" rx="2" fill="#6b3e1f"/>
+  </g>
+  <!-- shine -->
+  <path d="M22 12 V22 C22 27 24 31 27 33" fill="none" stroke="#fff6c2" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- star -->
+  <path d="M32 15 L34.4 20.2 L40 20.8 L35.8 24.5 L37 30 L32 27.2 L27 30 L28.2 24.5 L24 20.8 L29.6 20.2 Z" fill="#fff3b0" stroke="#a87400" stroke-width="1"/>
+</svg>
