@@ -4,7 +4,9 @@ import homeIcon from "../../shared/assets/home.png";
 export default function HomeButton() {
   const location = useLocation();
 
-  if (location.pathname === "/") return null; // || location.pathname === "hoc/#/gk" ??
+  // HashRouter paths are just the bit after "#", e.g. "/gk"
+  const hiddenOn = ["/", "/gk"];
+  if (hiddenOn.includes(location.pathname)) return null;
 
   return (
     <Link

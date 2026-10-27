@@ -16,7 +16,7 @@ export default function GkPage() {
       <div className="w-full max-w-[700px] flex-shrink">
         <Track />
       </div>
-      <Countdown date="20-12" />
+      <Countdown date="18-11" time="19:00" />
     </PageLayout>
   );
 }
