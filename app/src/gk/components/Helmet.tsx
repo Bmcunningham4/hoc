@@ -86,8 +86,8 @@ export default function Bat({ year, first, second, third }: BatProps) {
         <div
           className="absolute text-black font-bold leading-none"
           style={{
-            top: "80.7%",
-            left: "57.7%",
+            top: "80.45%",
+            left: "58%",
             transform: "translate(-50%, -50%) rotate(-40deg)",
             fontSize: "1.6cqw",
             letterSpacing: "0.02em",
