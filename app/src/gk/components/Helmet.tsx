@@ -5,6 +5,10 @@ import helmetDuncan from "../assets/helmet-duncan.png";
 import helmetPlain from "../assets/helmet-plain.png";
 import tag from "../assets/tag.png";
 
+// Dark outline so names stay readable on light visors (e.g. gold)
+const NAME_SHADOW =
+  "0 0 0.15cqw rgba(0,0,0,0.9), 0 0.1cqw 0.3cqw rgba(0,0,0,0.8)";
+
 interface BatProps {
   year: string;
   first?:
@@ -80,12 +84,13 @@ export default function Bat({ year, first, second, third }: BatProps) {
       {/* Year */}
       <div className="absolute inset-0" style={{ zIndex: 3 }}>
         <div
-          className="absolute text-black font-bold drop-shadow-md leading-none"
+          className="absolute text-black font-bold leading-none"
           style={{
-            top: "78%",
-            left: "58%",
-            transform: "translateX(-50%) rotate(-40deg)",
-            fontSize: "1.7cqw",
+            top: "79.6%",
+            left: "56.6%",
+            transform: "translate(-50%, -50%) rotate(-40deg)",
+            fontSize: "1.6cqw",
+            letterSpacing: "0.02em",
           }}
         >
           {year}
@@ -94,11 +99,12 @@ export default function Bat({ year, first, second, third }: BatProps) {
         {/* First */}
         {!isBlank && first && (
           <div
-            className="absolute text-white font-bold drop-shadow-md leading-none"
+            className="absolute text-white font-bold leading-none"
             style={{
               top: "44%",
               left: "22%",
               fontSize: "1.3cqw",
+              textShadow: NAME_SHADOW,
             }}
           >
             1. {first} 🏆
@@ -108,11 +114,12 @@ export default function Bat({ year, first, second, third }: BatProps) {
         {/* Second */}
         {!isBlank && second && (
           <div
-            className="absolute text-white font-bold drop-shadow-md leading-none"
+            className="absolute text-white font-bold leading-none"
             style={{
               top: "48%",
               left: "22%",
               fontSize: "1.3cqw",
+              textShadow: NAME_SHADOW,
             }}
           >
             2. {second}
@@ -122,11 +129,12 @@ export default function Bat({ year, first, second, third }: BatProps) {
         {/* Third */}
         {!isBlank && third && (
           <div
-            className="absolute text-white font-bold drop-shadow-md leading-none"
+            className="absolute text-white font-bold leading-none"
             style={{
               top: "52%",
               left: "22%",
               fontSize: "1.3cqw",
+              textShadow: NAME_SHADOW,
             }}
           >
             3. {third}
