@@ -8,8 +8,7 @@ export default function GkPage() {
   return (
     <PageLayout backgroundImage={trackImg}>
       <Header
-        main="Cook Cup 🏆 #5"
-        secondary="(1 year naming contract)"
+        main="Cunningham Cup 🏆 #6"
         blurred={true}
         color="white"
       />
