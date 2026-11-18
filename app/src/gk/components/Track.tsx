@@ -83,7 +83,7 @@ export default function Table() {
             left: `${LEFT_START + HORIZONTAL_GAP}%`,
           }}
         >
-          <Bat year="" first="blank" />
+          <Bat year="2026" first="Ben Cunningham" second="Toby Butler" third="Will Adamson" />
         </div>
 
         {/* 2027 */}
